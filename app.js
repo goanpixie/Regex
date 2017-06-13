@@ -5,11 +5,11 @@ target.innerHTML =
 string.replace(regex, string=>`<span>${string}</span>`);
 }
 
-var string= `This island is his, it is`
+var string= `it was the the thing`
 // var regex = new RegExp("it")
-var regex = /\bis\B/g
+var regex = /(the)\s?(?=\1)/g
 
-console.log(string.replace(regex, 'area code: $1'))
+console.log(string.replace(regex, ''))
 
 output(string, regex, document.querySelector('pre'))
 // console.log(regex.exec(string));
