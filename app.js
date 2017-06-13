@@ -5,12 +5,9 @@ target.innerHTML =
 string.replace(regex, string=>`<span>${string}</span>`);
 }
 
-var string= `foo
-foobar
-foobaz
-fooboo`
+var string= `This island is his, it is`
 // var regex = new RegExp("it")
-var regex = /foo(?!bar|boo)/g
+var regex = /\bis\B/g
 
 console.log(string.replace(regex, 'area code: $1'))
 
